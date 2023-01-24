@@ -1,0 +1,38 @@
+:root {
+    --main-background-primary: #f4f4f4;
+    --main-background-secondary: rgb(255, 255, 255);
+    --sidebar-top: #556c7a;
+    --sidebar-bottom: #162233;
+    --blue: #66b2e0;
+    --pink: #f19ea2;
+    --gray: #606060;
+    --dark: #000000;
+    --violet: #b653a9;
+    --white-blued: #d5dfe9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: rgb(30, 35, 41);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: var(--main-background-primary);
+}
+.app {
+    z-index: 1;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    background: transparent;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: hsl(229, 7%, 54%);
+    border-radius: 15px;
+}

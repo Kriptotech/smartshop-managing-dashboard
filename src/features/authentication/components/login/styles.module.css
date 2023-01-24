@@ -1,0 +1,105 @@
+.login_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.login_container .login_container_left {
+    flex-basis: 50%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.login_container .login_container_left form {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(56, 55, 55, 0.205);
+}
+.login_container .login_container_left form h1 {
+    color: var(--dark);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.login_container .login_container_left form p {
+    color: var(--gray);
+    margin-bottom: 35px;
+}
+.login_container .login_container_left form input:focus,
+.login_container .login_container_left form input:hover {
+    border: 1px solid var(--blue);
+}
+.login_container .login_container_left form input {
+    display: block;
+    width: 100%;
+    height: 70px;
+    outline: none;
+    border: none;
+    background-color: var(--main-background-primary);
+    color: var(--dark);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 4px 14px;
+}
+
+.login_container .login_container_left form button {
+    border: none;
+    color: #fff;
+    background-color: var(--blue);
+    margin: 15px 0;
+    border-radius: 5px;
+    padding: 18px 0;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 600;
+}
+.login_container .login_container_left form button:hover {
+    opacity: 0.7;
+}
+.login_container .login_container_left form a {
+    color: var(--violet);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.login_container .login_container_left form a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 1050px) {
+    .login_container .login_container_left form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .login_container {
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+    }
+    .login_container .login_container_left {
+        padding: 0;
+        flex-basis: 70%;
+    }
+}
+@media (max-width: 680px) {
+    .login_container .login_container_left {
+        flex-basis: 90%;
+    }
+}
+@media (max-width: 400px) {
+    .login_container .login_container_left {
+        flex-basis: 95%;
+    }
+}
