@@ -22,7 +22,7 @@ export function Header() {
                     }}
                     className={style.home_btn}
                 >
-                    <House color="rgba(157, 109, 235, 1)" size={28} />
+                    <House color="#66b2e0" size={28} />
                 </button>
 
                 <button
@@ -31,7 +31,7 @@ export function Header() {
                     }}
                     className={style.mobile_btn}
                 >
-                    <List color="rgba(157, 109, 235, 1)" size={28} />
+                    <List color="#66b2e0" size={28} />
                 </button>
 
                 <img

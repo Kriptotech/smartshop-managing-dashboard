@@ -41,7 +41,7 @@ export function DashboarContainer() {
                         <div>
                             <span>Informação</span>
                             {isLoading ? (
-                                <PulseLoader color="green" />
+                                <PulseLoader color="#66b2e0" />
                             ) : (
                                 <span>0</span>
                             )}
@@ -54,7 +54,7 @@ export function DashboarContainer() {
                         <div>
                             <span>Informação</span>
                             {isLoading ? (
-                                <PulseLoader color="green" />
+                                <PulseLoader color="#66b2e0" />
                             ) : (
                                 <span>0</span>
                             )}
@@ -67,7 +67,7 @@ export function DashboarContainer() {
                         <div>
                             <span>Informação</span>
                             {isLoading ? (
-                                <PulseLoader color="green" />
+                                <PulseLoader color="#66b2e0" />
                             ) : (
                                 <span>0MT</span>
                             )}
@@ -78,7 +78,7 @@ export function DashboarContainer() {
                     <Chart
                         chartType="Bar"
                         data={data}
-                        loader={<PulseLoader color="green" />}
+                        loader={<PulseLoader color="#66b2e0" />}
                         // options={options}
                         width="100%"
                         height="100%"

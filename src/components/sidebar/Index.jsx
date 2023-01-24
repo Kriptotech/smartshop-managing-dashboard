@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { Users, XCircle, ChartBar, CurrencyDollar } from "phosphor-react";
+import { CurrencyDollar, XCircle, ChartBar } from "phosphor-react";
 
 import style from "./styles.module.css";
 import { appContext } from "../../context/Index";
@@ -8,7 +8,9 @@ import { appContext } from "../../context/Index";
 export function Sidebar() {
     const { asideVisible, setasideVisible } = useContext(appContext);
     const navigate = useNavigate();
-    async function changeCurrentRoute(params) {}
+    async function changeCurrentRoute(params) {
+        navigate(`/${params}`);
+    }
 
     return (
         <>
@@ -27,9 +29,21 @@ export function Sidebar() {
                             <span>Dashboard</span>
                         </div>
 
-                        <div onClick={() => changeCurrentRoute("customers")}>
-                            <Users color={"#d5dfe9"} size={20} />
-                            <span>ddddgfdf</span>
+                        <div
+                            onClick={() =>
+                                changeCurrentRoute("change_media_tax")
+                            }
+                        >
+                            <CurrencyDollar color={"#d5dfe9"} size={20} />
+                            <span>Mudar TEM</span>
+                        </div>
+                        <div
+                            onClick={() =>
+                                changeCurrentRoute("change_fast_tax")
+                            }
+                        >
+                            <CurrencyDollar color={"#d5dfe9"} size={20} />
+                            <span>Mudar TER</span>
                         </div>
                     </div>
                 </div>
@@ -48,19 +62,25 @@ export function Sidebar() {
                         <button onClick={() => setasideVisible(false)}>
                             <XCircle color="rgba(157, 109, 235, 1)" size={28} />
                         </button>
-
                         <div onClick={() => changeCurrentRoute("dashboard")}>
                             <ChartBar color={"#d5dfe9"} size={20} />
                             <span>Dashboard</span>
                         </div>
-
                         <div
                             onClick={() =>
-                                changeCurrentRoute("confirm-float-request")
+                                changeCurrentRoute("change_media_tax")
                             }
                         >
                             <CurrencyDollar color={"#d5dfe9"} size={20} />
-                            <span>skkskdkdk</span>
+                            <span>Mudar TEM</span>
+                        </div>
+                        <div
+                            onClick={() =>
+                                changeCurrentRoute("change_fast_tax")
+                            }
+                        >
+                            <CurrencyDollar color={"#d5dfe9"} size={20} />
+                            <span>Mudar TER</span>
                         </div>
                     </div>
                 </div>

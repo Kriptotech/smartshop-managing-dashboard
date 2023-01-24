@@ -1,0 +1,165 @@
+.container {
+    flex: 1;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+
+.container .container_header {
+    display: flex;
+    padding: 0 10%;
+    margin-top: 50px;
+}
+.container .container_header h1 {
+    color: var(--dark);
+    opacity: 0.8;
+}
+.container .container_header a {
+    color: #ffffff;
+    background: var(--violet);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.container .container_header a:hover {
+    opacity: 0.8;
+}
+.container .container_header a:active {
+    background: none;
+}
+
+.container .container_row_container {
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .container_row_container .container_card span {
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    opacity: 0.8;
+    padding: 0 15px;
+}
+.container .container_row_container .container_card p {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+.container .container_row_container .container_card .container_card_box div {
+    border-top: 1px solid var(--dark);
+    margin-top: 30px;
+    height: 60px;
+    width: 100%;
+}
+
+.container .container_row_container form {
+    width: 60%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(65, 61, 61, 0.322);
+    padding: 30px 0px;
+    color: var(--Dashboard-color-text-2);
+}
+.container .container_row_container form h4 {
+    opacity: 0.8;
+    margin-bottom: 5px;
+    padding: 0 15px;
+}
+.container .container_row_container form p {
+    padding: 0 15px;
+    opacity: 0.8;
+    font-size: 0.8rem;
+    padding-bottom: 25px;
+}
+.container .container_row_container form div {
+    padding: 0 15px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .container_row_container form div input,
+.container .container_row_container form div select {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    color: var(--gray);
+    padding: 0 10px;
+}
+.container .container_row_container form div input::placeholder,
+.container .container_row_container form div select::placeholder {
+    color: var(--gray);
+    opacity: 0.8;
+}
+.container .container_row_container form div input:focus {
+    border: 1px solid var(--blue);
+}
+.container .container_row_container form button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffffff;
+    background: var(--blue);
+    padding: 15px 30px;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.container .container_row_container form button:hover {
+    opacity: 0.8;
+}
+.container .container_row_container form button:active {
+    background: none;
+}
+
+.container .container_row_container .container_row_box .container_row {
+    width: 50%;
+    border-radius: 5px;
+    padding: 0 5px;
+    border: 0.3px solid var(--gray);
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.container .container_row_container .container_row_box .container_row input {
+    flex: 1;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0 5px;
+    height: 100%;
+    color: #888;
+}
+
+@media (max-width: 1200px) {
+    .container .container_header {
+        padding: 0 2%;
+    }
+    .container .container_row_container {
+        padding: 0 2%;
+    }
+    .container .container_row_container form {
+        width: 70%;
+    }
+}
+@media (max-width: 1050px) {
+    .container .container_header {
+        padding: 0 5%;
+    }
+    .container .container_row_container form {
+        width: 90%;
+    }
+}
+@media (max-width: 900px) {
+    .container .container_row_container form {
+        width: 100%;
+    }
+}
