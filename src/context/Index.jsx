@@ -4,9 +4,7 @@ export const appContext = createContext(null);
 
 export function MainContext({ children }) {
     // states
-    const [asideVisible, setasideVisible] = useState(true);
-
-   
+    const [asideVisible, setasideVisible] = useState(false);
 
     // values to be shared across the context
     var contextValues = {

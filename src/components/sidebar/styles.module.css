@@ -62,6 +62,12 @@
     border-radius: 5px;
     margin-bottom: 15px;
 }
+.sidebar_mobile_visible .sidebar_first_div_box div:hover {
+    opacity: 0.8;
+}
+.sidebar_mobile_visible .sidebar_first_div_box div:active {
+    opacity: 0.4;
+}
 
 .sidebar .sidebar_first_div_box div span:first-child,
 .sidebar_mobile .sidebar_first_div_box div span:first-child,
