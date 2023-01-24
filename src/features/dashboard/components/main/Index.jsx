@@ -39,7 +39,7 @@ export function DashboarContainer() {
                 <div className={style.dashboard_card}>
                     <div className={style.dashboard_card_row}>
                         <div>
-                            <span>kskdkkfdjfdjjjj</span>
+                            <span>Informação</span>
                             {isLoading ? (
                                 <PulseLoader color="green" />
                             ) : (
@@ -52,7 +52,7 @@ export function DashboarContainer() {
                 <div className={style.dashboard_card}>
                     <div className={style.dashboard_card_row}>
                         <div>
-                            <span>kskdkkfdjfdjjjj</span>
+                            <span>Informação</span>
                             {isLoading ? (
                                 <PulseLoader color="green" />
                             ) : (
@@ -65,7 +65,7 @@ export function DashboarContainer() {
                 <div className={style.dashboard_card}>
                     <div className={style.dashboard_card_row}>
                         <div>
-                            <span>kskdkkfdjfdjjjj</span>
+                            <span>Informação</span>
                             {isLoading ? (
                                 <PulseLoader color="green" />
                             ) : (
@@ -79,7 +79,7 @@ export function DashboarContainer() {
                         chartType="Bar"
                         data={data}
                         loader={<PulseLoader color="green" />}
-                        options={options}
+                        // options={options}
                         width="100%"
                         height="100%"
                         legendToggle
