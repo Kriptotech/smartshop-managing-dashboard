@@ -26,7 +26,7 @@ export function DashboarContainer() {
 
     var options = {
         chart: {
-            title: "Grafico principal",
+            title: "",
             subtitle: "veja as informações no grafico sobre despesas e ganhos.",
         },
     };

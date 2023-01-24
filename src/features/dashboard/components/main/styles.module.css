@@ -3,7 +3,7 @@
     min-height: 100vh;
     padding-bottom: 100px;
     z-index: 1;
-    padding: 0 5%;
+    padding: 0 2%;
 }
 
 .dashboard .dashboard_cards_box {
@@ -36,11 +36,10 @@
     background: #fff;
     width: 100%;
     min-height: 300px;
-    margin-left: 10px;
     margin-top: 30px;
     margin-bottom: 50px;
     border-radius: 15px;
-    padding: 30px;
+    padding: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.24);
 }
 .dashboard .dashboard_cards_box .dashboard_card .dashboard_card_row {
